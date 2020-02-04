@@ -89,7 +89,7 @@ html {
 }
 
 .add {
-  padding: 16px;
+  padding: 0px 16px;
 }
 
 .add-form {
@@ -129,6 +129,8 @@ html {
 .todos {
   display: flex;
   flex-direction: column;
+
+  min-height: 500px;
 }
 
 .todo {
@@ -143,4 +145,12 @@ html {
   font-size: 24px;
 
   border-bottom: 1px solid var(--main-red-color);
+}
+
+.todo-text {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
