@@ -139,7 +139,7 @@ html {
   flex: 1 0 auto;
   text-align: center;
 
-  min-height: 34px;
+  max-height: 34px;
   margin: 16px 0 0;
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
