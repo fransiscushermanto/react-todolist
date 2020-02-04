@@ -18,10 +18,16 @@ const TodoList = () => {
     }
   ]);
 
+  const addTodo = value => {
+    const addedTodo = [...todos, { text: value }];
+
+    setTodos(addedTodo);
+  };
+
   return (
     <Paper>
       <Header />
-      <TodoForm setTodos={setTodos} />
+      <TodoForm addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );
